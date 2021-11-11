@@ -39,7 +39,7 @@
     "semantic-release": "^17.0.0"
   },
   "engines": {
-    "node": ">= 12"
+    "node": ">= v12.22.7"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
