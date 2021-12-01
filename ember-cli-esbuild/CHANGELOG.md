@@ -1,3 +1,11 @@
+## [5.1.5](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v5.1.4...v5.1.5) (2021-12-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency esbuild to ^0.14.1 ([8cba2ab](https://github.com/nullvoxpopuli/ember-cli-esbuild/commit/8cba2ab05a5284638d66747e76d783052c5142e3))
+* **ember-addon:** run minifier before broccoli-asset-rev ([9e240c8](https://github.com/nullvoxpopuli/ember-cli-esbuild/commit/9e240c81a40a3c2f83b03058b5752a9e7116f2b6))
+
 ## [5.1.4](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v5.1.3...v5.1.4) (2021-11-27)
 
 
