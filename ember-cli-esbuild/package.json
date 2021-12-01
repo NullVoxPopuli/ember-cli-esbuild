@@ -49,10 +49,10 @@
   },
   "ember-addon": {
     "before": [
-      "ember-cli-sri"
+      "ember-cli-sri",
+      "broccoli-asset-rev"
     ],
     "after": [
-      "broccoli-asset-rev"
     ]
   },
   "release": {
