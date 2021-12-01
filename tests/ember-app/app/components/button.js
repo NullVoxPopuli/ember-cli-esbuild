@@ -8,4 +8,8 @@ export default class ButtonComponent extends Component {
   @action click() {
     this.wasClicked = true;
   }
+
+  @action async notUsed() {
+    await fetch('/robert-bahn-98KcGRrN4LQ-unsplash.jpg');
+  }
 }

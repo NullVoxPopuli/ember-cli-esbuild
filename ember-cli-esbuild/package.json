@@ -34,9 +34,9 @@
   },
   "devDependencies": {
     "@nullvoxpopuli/eslint-configs": "^2.1.8",
-    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/changelog": "^5.0.0",
     "@semantic-release/git": "^10.0.1",
-    "semantic-release": "^18.0.1"
+    "semantic-release": "^17.0.0"
   },
   "engines": {
     "node": ">= 12"
@@ -48,8 +48,12 @@
     "edition": "octane"
   },
   "ember-addon": {
-    "before": "ember-cli-sri",
-    "after": "broccoli-asset-rev"
+    "before": [
+      "ember-cli-sri"
+    ],
+    "after": [
+      "broccoli-asset-rev"
+    ]
   },
   "release": {
     "branches": [
