@@ -59,10 +59,23 @@ async function hasJSSourceMapsURL(expectation) {
 }
 
 async function appJS() {
-  let files = await globby('**/*-app-*.js', { expandDirectories: true });
+  // based of package.json#name
+  let files = await globby('**/ember-app-*.js', { expandDirectories: true });
 
   if (files.length === 0) {
     throw new Error('No app js file found');
+  }
+
+  // there can only be one app js file
+  let data = await fs.readFile(files[0]);
+  return data.toString();
+}
+
+async function vendorJS() {
+  let files = await globby('**/vendor-*.js', { expandDirectories: true });
+
+  if (files.length === 0) {
+    throw new Error('No vendor js file found');
   }
 
   // there can only be one app js file
@@ -79,10 +92,14 @@ test('basic build', async () => {
   // assert that the image references end with a fingerprint
   // (because we don't want to interfece with broccoli-asset-rev)
   let app = await appJS();
+  let vendor = await vendorJS();
+
   // fingerprint occurred
   expect(app).toMatch(/unsplash-[0-9a-f]{16,}\.jpg/);
+  expect(vendor).toMatch(/unsplash-[0-9a-f]{16,}\.jpg/);
   // fingerprint did not occur
   expect(app).not.toMatch(/unsplash\.jpg/);
+  expect(vendor).not.toMatch(/unsplash\.jpg/);
 });
 
 test('build: sourceMap: external', async () => {
