@@ -34,9 +34,9 @@
   },
   "devDependencies": {
     "@nullvoxpopuli/eslint-configs": "^2.1.20",
-    "@semantic-release/changelog": "^6.0.1",
-    "@semantic-release/git": "^10.0.1",
-    "semantic-release": "^19.0.2"
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.1",
+    "semantic-release": "^17.4.7"
   },
   "engines": {
     "node": ">= 12"
