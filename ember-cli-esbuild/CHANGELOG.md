@@ -1,3 +1,10 @@
+## [5.1.22](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v5.1.21...v5.1.22) (2022-02-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency esbuild to ^0.14.23 ([a02ebd8](https://github.com/nullvoxpopuli/ember-cli-esbuild/commit/a02ebd839e63640e85b88cb78ee3168fd91ac36e))
+
 ## [5.1.21](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v5.1.20...v5.1.21) (2022-02-17)
 
 
