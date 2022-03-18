@@ -193,7 +193,7 @@
 ### BREAKING CHANGES
 
 *   @nullvoxpopuli/ember-cli-esbuild will no longer receive updates.
-  Instead, insteall ember-cli-esbuild-minifier
+  Instead, install ember-cli-esbuild-minifier
 
 ## [4.2.9](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v4.2.8...v4.2.9) (2021-11-09)
 
