@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: volta-cli/action@v1
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
@@ -44,7 +44,7 @@ jobs:
       - uses: volta-cli/action@v1
         with:
           node-version: 12 # min-supported
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
