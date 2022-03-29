@@ -16,9 +16,9 @@ Installation
 1. remove `ember-cli-terser` or `ember-cli-ugfily`
 2.
     ```
-    yarn add --dev @nullvoxpopuli/ember-cli-esbuild
+    yarn add --dev @nullvoxpopuli/ember-cli-esbuild esbuild
     # or
-    npm install --save-dev @nullvoxpopuli/ember-cli-esbuild
+    npm install --save-dev @nullvoxpopuli/ember-cli-esbuild esbuild
     ```
 
 Usage
