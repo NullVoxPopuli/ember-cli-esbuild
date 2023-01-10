@@ -102,22 +102,36 @@ test('basic build', async () => {
   expect(vendor).not.toMatch(/unsplash\.jpg/);
 });
 
+test('build: source map enabled through Ember CLI config', async () => {
+  await build({ SOURCEMAP: 'true' });
+
+  expect(exists('dist/**/*.map')).toBeTruthy();
+  expect(await hasJSSourceMapsURL(true)).toBeTruthy();
+});
+
+test('build: sourceMap: linked', async () => {
+  await build({ ESBUILD_SOURCEMAP: 'linked' });
+
+  expect(exists('dist/**/*.map')).toBeTruthy();
+  expect(await hasJSSourceMapsURL(true)).toBeTruthy();
+});
+
 test('build: sourceMap: external', async () => {
-  await build({ SOURCEMAP: 'external' });
+  await build({ ESBUILD_SOURCEMAP: 'external' });
 
   expect(exists('dist/**/*.map')).toBeTruthy();
   expect(await hasJSSourceMapsURL(false)).toBeFalsy();
 });
 
 test('build: sourceMap: both', async () => {
-  await build({ SOURCEMAP: 'both' });
+  await build({ ESBUILD_SOURCEMAP: 'both' });
 
   expect(exists('dist/**/*.map')).toBeTruthy();
   expect(await hasJSSourceMapsURL(true)).toBeTruthy();
 });
 
 test('build: sourceMap: inline', async () => {
-  await build({ SOURCEMAP: 'inline' });
+  await build({ ESBUILD_SOURCEMAP: 'inline' });
 
   expect(exists('dist/**/*.map')).toBeFalsy();
   expect(await hasJSSourceMapsURL(true)).toBeTruthy();
