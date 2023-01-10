@@ -2,17 +2,22 @@
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-const { SOURCEMAP, DISABLE_MINIFY } = process.env;
+const { SOURCEMAP, ESBUILD_SOURCEMAP, DISABLE_MINIFY } = process.env;
 
 module.exports = function (defaults) {
   let options = {
     'ember-cli-esbuild': {
       enabled: !DISABLE_MINIFY,
     },
+    sourcemaps: {},
   };
 
   if (SOURCEMAP) {
-    options['ember-cli-esbuild'].sourceMap = SOURCEMAP;
+    options.sourcemaps.enabled = true;
+  }
+
+  if (ESBUILD_SOURCEMAP) {
+    options['ember-cli-esbuild'].sourceMap = ESBUILD_SOURCEMAP;
   }
 
   let app = new EmberApp(defaults, {

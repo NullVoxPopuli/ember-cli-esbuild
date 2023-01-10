@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 const walkSync = require('walk-sync');
 const Plugin = require('broccoli-plugin');
-const defaults = require('lodash.defaultsdeep');
 const symlinkOrCopy = require('symlink-or-copy');
 const MatcherCollection = require('matcher-collection');
 const debug = require('debug')('ember-cli-esbuild');
@@ -33,11 +32,7 @@ module.exports = class ESBuildWriter extends Plugin {
       needsCache: false,
     });
 
-    this.options = defaults(options, {
-      esbuild: {
-        sourceMap: {},
-      },
-    });
+    this.options = options;
 
     this.concurrency =
       Number(process.env.JOBS) ||
