@@ -67,12 +67,12 @@
     "qunit-dom": "^1.6.0"
   },
   "engines": {
-    "node": "10.* || >= 12"
+    "node": "14.* || >= 16"
   },
   "ember": {
     "edition": "octane"
   },
   "volta": {
-    "node": "14.18.0"
+    "node": "14.21.2"
   }
 }
