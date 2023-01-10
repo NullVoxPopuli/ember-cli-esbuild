@@ -1,3 +1,20 @@
+# [6.0.0](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v5.1.53...v6.0.0) (2023-01-10)
+
+
+### Bug Fixes
+
+* Fix taking default Ember CLI source map config into account ([6289c3f](https://github.com/nullvoxpopuli/ember-cli-esbuild/commit/6289c3f5ac93a5c36d586b14eacde76c84bb2369))
+
+
+### chore
+
+* drop support for node 12 ([cf6efed](https://github.com/nullvoxpopuli/ember-cli-esbuild/commit/cf6efede05d9975134a7ae4b81ed588148a4a13c))
+
+
+### BREAKING CHANGES
+
+* node 12 is no longer supported
+
 ## [5.1.53](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v5.1.52...v5.1.53) (2022-08-17)
 
 
