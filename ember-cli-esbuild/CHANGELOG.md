@@ -1,3 +1,10 @@
+## [6.0.17](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v6.0.16...v6.0.17) (2023-05-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency esbuild to ^0.17.19 ([594aca2](https://github.com/nullvoxpopuli/ember-cli-esbuild/commit/594aca26860def2aa77087c29ac7ade38c2e9d16))
+
 ## [6.0.16](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v6.0.15...v6.0.16) (2023-04-23)
 
 
