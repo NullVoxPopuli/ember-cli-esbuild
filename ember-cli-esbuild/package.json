@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-esbuild-minifier",
-  "version": "6.0.25",
+  "version": "6.0.26",
   "description": "JavaScript minification for Ember-CLI",
   "keywords": [
     "ember-addon"
