@@ -1,3 +1,10 @@
+## [6.0.33](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v6.0.32...v6.0.33) (2023-11-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency workerpool to v8 ([dd4cc31](https://github.com/nullvoxpopuli/ember-cli-esbuild/commit/dd4cc318de194264344b40987e9373f4115f5dc4))
+
 ## [6.0.32](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v6.0.31...v6.0.32) (2023-10-19)
 
 
