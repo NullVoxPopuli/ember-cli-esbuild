@@ -1,3 +1,15 @@
+# [6.1.0](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v6.0.37...v6.1.0) (2024-07-03)
+
+
+### Bug Fixes
+
+* update CI ([79a3d63](https://github.com/nullvoxpopuli/ember-cli-esbuild/commit/79a3d63c619c0e69d1ed67f3e401fd8b6c6c37d4))
+
+
+### Features
+
+* allow passing in `target` as an option to esbuild ([9568e6e](https://github.com/nullvoxpopuli/ember-cli-esbuild/commit/9568e6e5b5e06b9853ddfaa8f56cd6e7d40036ef))
+
 ## [6.0.37](https://github.com/nullvoxpopuli/ember-cli-esbuild/compare/v6.0.36...v6.0.37) (2023-12-10)
 
 
