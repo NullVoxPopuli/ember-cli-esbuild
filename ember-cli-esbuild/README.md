@@ -52,7 +52,7 @@ var app = new EmberApp({
 
 - `sourceMap`: the ESBuild sourcemap option. `false`, by default. Can be: `'linked'`, `'external'`, `'inline'`, `'both'`, or `false`. See [ESBuild's docs](https://esbuild.github.io/api/#sourcemap) for more info
 
-- `target?: string | string[]`: the ESBuild target option. `esnext` by default. See [ESBuild's docs](https://esbuild.github.io/api/#target) for more info on the available targets.
+- `target?: string | string[]`: the ESBuild target option. See [ESBuild's docs](https://esbuild.github.io/api/#target) for more info on the available targets.
 
 ### Source Maps
 
