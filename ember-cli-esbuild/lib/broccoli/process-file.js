@@ -25,6 +25,7 @@ module.exports = async function processFile(
     await esbuild.build({
       entryPoints: [inFile],
       sourcemap: options.sourceMap || false,
+      target: options.target,
       // bundling happens externally (broccoli, webpack, etc)
       bundle: false,
       minify: true,
