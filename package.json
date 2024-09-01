@@ -16,7 +16,7 @@
   "volta": {
     "node": "20.17.0",
     "yarn": "1.22.22",
-    "npm": "10.8.2"
+    "npm": "10.8.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.8.1",
