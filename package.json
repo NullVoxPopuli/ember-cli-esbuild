@@ -14,7 +14,7 @@
     "test:ember-app": "cd tests/ember-app && ./run-tests.sh"
   },
   "volta": {
-    "node": "22.20.0",
+    "node": "22.21.1",
     "yarn": "1.22.22",
     "npm": "11.6.2"
   },
