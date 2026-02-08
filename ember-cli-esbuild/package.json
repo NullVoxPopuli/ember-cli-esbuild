@@ -33,10 +33,10 @@
     "workerpool": "^8.0.0"
   },
   "devDependencies": {
-    "@nullvoxpopuli/eslint-configs": "^2.3.5",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.1",
-    "semantic-release": "^19.0.0"
+    "@nullvoxpopuli/eslint-configs": "^5.0.0",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
+    "semantic-release": "^25.0.0"
   },
   "engines": {
     "node": ">= 14"
